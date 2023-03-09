@@ -1,11 +1,11 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react-router-dom'
-// import Carrousel from '../components/Carrousel'
-// import Title from '../components/Title'
-// import Tags from '../components/Tags'
-// import Host from '../components/Host'
-// import Rate from '../components/Rate'
-// import Collapse from '../components/Collapse'
+import Carrousel from '../components/Carrousel'
+import Title from '../components/Title'
+import Tags from '../components/Tags'
+import Host from '../components/Host'
+import Rate from '../components/Rate'
+import Collapse from '../components/Collapse'
 
 export default function Apartment() {
   const { id } = useParams()
@@ -23,20 +23,20 @@ export default function Apartment() {
       .catch((error) => error)
   })
 
-  // const {
-  //   title,
-  //   location,
-  //   pictures,
-  //   rating,
-  //   host,
-  //   tags,
-  //   description,
-  //   equipments,
-  // } = apart
+  const {
+    title,
+    location,
+    pictures,
+    rating,
+    host,
+    tags,
+    description,
+    equipments,
+  } = apart
 
   return (
     <>
-      {/* <Carrousel pictures={pictures}></Carrousel>
+      <Carrousel pictures={pictures}></Carrousel>
       <div className="apart-div"></div>
       <div className="apart-title-tags">
         <Title title={title} location={location} />
@@ -60,7 +60,7 @@ export default function Apartment() {
             />
           </li>
         </ul>
-      </div> */}
+      </div>
     </>
   )
 }
