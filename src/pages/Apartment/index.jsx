@@ -1,11 +1,11 @@
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { useState, useEffect } from 'react-router-dom'
-import Carrousel from '../components/Carrousel'
-import Title from '../components/Title'
-import Tags from '../components/Tags'
-import Host from '../components/Host'
-import Rate from '../components/Rate'
-import Collapse from '../components/Collapse'
+import Carrousel from '../../components/Carrousel'
+import Title from '../../components/Title'
+import Tag from '../../components/Tag'
+import Host from '../../components/Host'
+import Rate from '../../components/Rate'
+import Collapse from '../../components/Collapse'
 
 export default function Apartment() {
   const { id } = useParams()
@@ -13,7 +13,7 @@ export default function Apartment() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('..logement.json')
+    fetch('../apartments.json')
       .then((res) => res.json())
       .then((article) => {
         const data = article.find((item) => item.id === id)
@@ -38,9 +38,9 @@ export default function Apartment() {
     <>
       <Carrousel pictures={pictures}></Carrousel>
       <div className="apart-div"></div>
-      <div className="apart-title-tags">
+      <div className="apart-title-tag">
         <Title title={title} location={location} />
-        <Tags tags={tags} />
+        <Tag tag={tags} />
       </div>
       <div className="apart-rate-host">
         <Host host={host} />

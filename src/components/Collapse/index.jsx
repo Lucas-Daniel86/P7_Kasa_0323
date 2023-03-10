@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import vectorBas from '../assets/vector-bas.svg'
+import vectorBas from '../../assets/images/vector-bas.svg'
 
 export default function Collapse({ title, description }) {
   const [open, setOpen] = useState(false)

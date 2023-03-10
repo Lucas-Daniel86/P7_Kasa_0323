@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import vectorRight from '../../assets/images/vector-right.svg'
+import vectorLeft from '../../assets/images/vector-left.svg'
 
 export default function Carrousel({ pictures }) {
   const [slide, setSlide] = useState(0)
@@ -15,8 +17,8 @@ export default function Carrousel({ pictures }) {
     <div className="carrousel">
       {pictures?.length > 1 && (
         <img
-          className="arrow_left arrow"
-          src={arrow_left}
+          className="vector-left vector"
+          src={vectorLeft}
           alt=""
           onclick={previousSlide}
         />
@@ -35,8 +37,8 @@ export default function Carrousel({ pictures }) {
       })}
       {pictures?.length > 1 && (
         <img
-          className="arrow_right arrow"
-          src={arrow_right}
+          className="vector-right vector"
+          src={vectorRight}
           alt=""
           onclick={nextSlide}
         />

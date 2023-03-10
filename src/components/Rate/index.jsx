@@ -1,6 +1,6 @@
 import React from 'react'
-import emptyStar from '../../assets/images/emptyStar.svg'
-import fullStar from '../../assets/images/star_rate.svg'
+import emptyStar from '../../assets/images/empty-star.svg'
+import fullStar from '../../assets/images/star-rate.svg'
 
 export default function Rate({ rating }) {
   const NumberOfStars = [1, 2, 3, 4, 5]

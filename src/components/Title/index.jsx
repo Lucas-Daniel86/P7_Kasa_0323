@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Title = ({ title, location }) => {
+export default function Title({ title, location }) {
   return (
     <>
       <h1 className="title-apart">{title}</h1>
