@@ -1,23 +1,16 @@
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import '../../styles/home.css'
 import Banner from '../../components/Banner'
+import banner from '../../assets/images/banner-home.png'
 import Card from '../../components/Card'
+import accomodations from '../../data.json'
 
 export default function Home() {
-  const [data, setData] = useState([])
-
-  useEffect(() => {
-    fetch('../apartments.json')
-      .then((res) => res.json())
-      .then((apartData) => setData(apartData))
-      .catch((error) => console.log(error))
-  }, [])
-
   return (
     <>
-      <Banner />
+      <Banner image={banner} title="Chez vous, partout et ailleurs" />
       <div className="card-container">
-        {data.map((apart, id) => (
+        {accomodations.map((apart, id) => (
           <div className="card-apart" key={id}>
             <Link className="link-card-apart" to={`/apartment/${apart.id}`}>
               <Card cover={apart.cover} title={apart.title} />

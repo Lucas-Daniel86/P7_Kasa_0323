@@ -1,3 +1,5 @@
+import '../../styles/card.css'
+
 export default function Card({ cover, title }) {
   return (
     <article className="card-apart">

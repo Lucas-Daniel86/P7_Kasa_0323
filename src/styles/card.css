@@ -1,0 +1,37 @@
+.card-apart {
+  position: relative;
+  display: flex;
+  width: 335px;
+  height: 255px;
+  min-width: 335px;
+  transition: transform 1s;
+}
+
+.card-apart img {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-apart-layer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-apart-title {
+  position: absolute;
+  top: -90px;
+  left: 20px;
+  color: white;
+  width: 300px;
+  height: 52px;
+  line-height: 142.6%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.link_card_logement {
+  text-decoration: none;
+}
