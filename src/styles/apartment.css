@@ -1,0 +1,35 @@
+.apart-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.apart-title-tag {
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.apart-rate-host {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 35px;
+  gap: 20px;
+}
+
+.apart-collapse {
+  margin-top: -20px;
+  margin-bottom: -120px;
+  margin-left: -90px;
+  margin-right: 20px;
+}
+
+.apart-collapse ul {
+  display: flex;
+}
+
+.apart-collapse li {
+  width: 50%;
+}
