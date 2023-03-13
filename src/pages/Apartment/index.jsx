@@ -4,8 +4,10 @@ import Title from '../../components/Title'
 import Host from '../../components/Host'
 import Rate from '../../components/Rate'
 import Collapse from '../../components/Collapse'
-import Error from '../../components/Error'
+import Error from '../../pages/Error'
 import accomodations from '../../data.json'
+import '../../styles/apartment.css'
+import '../../styles/tag.css'
 
 export default function Apartment() {
   const { id } = useParams()
@@ -19,24 +21,25 @@ export default function Apartment() {
 
   return (
     <>
-      <Carrousel pictures={getApartment.picture}></Carrousel>
-      <div className="apart-div"></div>
-      <div className="apart-title-tag">
-        <Title title={getApartment.title} location={getApartment.location} />
-        <div className="tags">
-          {getApartment.tags.map((tag) => (
-            <div
-              className="tagTxt"
-              key={`${getApartment.tags}-${Math.random()}`}
-            >
-              {tag}
-            </div>
-          ))}
+      <Carrousel pictures={getApartment.pictures}></Carrousel>
+      <div className="apart-div">
+        <div className="apart-title-tag">
+          <Title title={getApartment.title} location={getApartment.location} />
+          <div className="tags">
+            {getApartment.tags.map((tag) => (
+              <div
+                className="tagTxt"
+                key={`${getApartment.tags}-${Math.random()}`}
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="apart-rate-host">
-        <Host host={getApartment.host} />
-        <Rate rating={getApartment.rating} />
+        <div className="apart-rate-host">
+          <Host host={getApartment.host} />
+          <Rate rating={getApartment.rating} />
+        </div>
       </div>
       <div className="apart-collapse">
         <ul>
