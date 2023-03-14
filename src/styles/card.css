@@ -19,6 +19,11 @@
   position: relative;
 }
 
+/* .card-div:hover {
+  background: linear-gradient(180deg, #ff6060 85%, #0000a6 100%);
+  cursor: pointer;
+} */
+
 .card-img {
   width: 340px;
   height: 300px;
@@ -31,7 +36,7 @@
 .card-div {
   background: linear-gradient(185deg, transparent 70%, rgba(0, 0, 0, 0.5));
   border-radius: 10px;
-  width: 340px;
+  width: 100%;
   height: 300px;
   bottom: 34px;
   position: absolute;
@@ -44,7 +49,16 @@
   color: white;
   width: 300px;
   height: 52px;
-  line-height: 142.6%;
+  line-height: 142%;
   font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .card-container {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
