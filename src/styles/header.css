@@ -36,3 +36,23 @@ nav {
   margin-right: 50px;
   margin-top: 8px;
 }
+
+@media screen and (max-width: 767px) {
+  nav {
+    margin-right: 10px;
+  }
+
+  .nav-active {
+    padding: 10px;
+  }
+
+  .nav-inactive {
+    padding: 10px;
+  }
+
+  .logo {
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 70px;
+  }
+}
