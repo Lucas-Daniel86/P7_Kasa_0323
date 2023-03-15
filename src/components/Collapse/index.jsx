@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import vectorBas from '../../assets/images/vector-bas.svg'
+import vectorDown from '../../assets/images/vector-bas.svg'
 import '../../styles/collapse.css'
 
 export default function Collapse({ title, description }) {
@@ -10,10 +10,10 @@ export default function Collapse({ title, description }) {
       <div className="collapse-div">
         <div className="collapse-title">{title}</div>
         <span
-          className={`collapse-vectorBas ${open}`}
+          className={`collapse-vectorDown ${open}`}
           onClick={() => setOpen(!open)}
         >
-          <img src={vectorBas} alt="Icône flèche" />
+          <img src={vectorDown} alt="Icône flèche" />
         </span>
       </div>
       {open && <div className="collapse-description">{description}</div>}
