@@ -1,12 +1,12 @@
 .footer {
-  height: 210px;
+  height: 260px;
   background-color: #000000;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .footer-txt {
