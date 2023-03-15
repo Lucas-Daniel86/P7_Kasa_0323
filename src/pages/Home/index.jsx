@@ -1,8 +1,8 @@
-import '../../styles/card.css'
 import Banner from '../../components/Banner'
 import banner from '../../assets/images/banner-home.png'
 import Card from '../../components/Card'
 import accomodations from '../../data.json'
+// import '../../styles/card.css'
 
 export default function Home() {
   return (

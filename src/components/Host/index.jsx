@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../styles/host.css'
 
 export default function Host({ host }) {
   return (

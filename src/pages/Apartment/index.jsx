@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import Carrousel from '../../components/Carrousel'
+import Carousel from '../../components/Carousel'
 import Title from '../../components/Title'
 import Host from '../../components/Host'
 import Rate from '../../components/Rate'
@@ -21,7 +21,7 @@ export default function Apartment() {
 
   return (
     <>
-      <Carrousel pictures={getApartment.pictures}></Carrousel>
+      <Carousel pictures={getApartment.pictures}></Carousel>
       <div className="apart-div">
         <div className="apart-title-tag">
           <Title title={getApartment.title} location={getApartment.location} />
