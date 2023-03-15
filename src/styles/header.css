@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
   align-items: center;
   margin-top: 20px;
 }
@@ -39,7 +39,7 @@ nav {
 
 @media screen and (max-width: 767px) {
   nav {
-    margin-right: 10px;
+    margin-right: 0px;
   }
 
   .nav-active {
