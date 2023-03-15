@@ -21,3 +21,13 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+@media screen and (max-width: 767px) {
+  .host {
+    margin-top: -20px;
+  }
+
+  .host-name {
+    font-weight: 300;
+  }
+}
