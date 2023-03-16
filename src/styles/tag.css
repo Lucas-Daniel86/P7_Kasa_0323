@@ -13,3 +13,9 @@
   border-radius: 5px;
   padding: 5px 40px;
 }
+
+@media screen and (max-width: 767px) {
+  .tagTxt {
+    padding: 5px 10px;
+  }
+}
