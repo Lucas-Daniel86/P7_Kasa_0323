@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 194px;
 }
 
 .footer-txt {
@@ -16,6 +16,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    height: 200px;
+    margin-top: 160px;
+    margin-right: -26px;
+  }
   .footer-txt {
     font-weight: 100;
     font-size: 15px;

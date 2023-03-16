@@ -2,7 +2,7 @@
   height: 400px;
   margin: 30px 0 30px 50px;
   position: relative;
-  width: 92%;
+  width: 93%;
 }
 
 .vector {
@@ -59,8 +59,7 @@ vector à 24px  */
 @media screen and (max-width: 767px) {
   .carousel {
     height: 260px;
-    margin: 0px auto;
-    bottom: -20px;
+    margin-left: 26px;
   }
   .carousel-img {
     height: 255px;

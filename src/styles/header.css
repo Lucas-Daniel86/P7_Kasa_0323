@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   align-items: center;
   margin-top: 20px;
 }
@@ -11,7 +11,7 @@ nav {
 }
 
 .nav-active {
-  padding: 30px;
+  padding: 60px;
   width: 50%;
   color: #ff6060;
   position: relative;
@@ -21,7 +21,7 @@ nav {
 }
 
 .nav-inactive {
-  padding: 30px;
+  padding: 60px;
   width: 50%;
   color: #ff6060;
   position: relative;
@@ -38,16 +38,25 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    width: 98%;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
   nav {
     margin-right: 0px;
   }
 
   .nav-active {
     padding: 10px;
+    font-size: 18px;
+    font-weight: 200;
   }
 
   .nav-inactive {
     padding: 10px;
+    font-size: 18px;
+    font-weight: 200;
   }
 
   .logo {
