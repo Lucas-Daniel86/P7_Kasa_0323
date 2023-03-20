@@ -1,12 +1,11 @@
 .footer {
-  height: 260px;
+  height: 209px;
   background-color: #000000;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 180px;
 }
 
 .footer-txt {
@@ -16,10 +15,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer {
-    height: 200px;
-    /* margin-right: -26px; */
-  }
   .footer-txt {
     font-weight: 100;
     font-size: 15px;

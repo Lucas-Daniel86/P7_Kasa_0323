@@ -1,8 +1,6 @@
 .tags {
   display: flex;
-  justify-content: flex-start;
-  margin-top: 15px;
-  gap: 0.6rem;
+  gap: 10px;
 }
 
 .tagTxt {

@@ -1,11 +1,11 @@
 .about {
   margin-top: 170px;
   margin-left: 60px;
+  margin-bottom: 180px;
 }
 
 .collapse {
-  margin-bottom: 23px;
-  margin-top: 10px;
+  margin-bottom: 37px;
 }
 
 .collapse-div {
@@ -57,8 +57,8 @@
   }
 
   .collapse-div {
-    width: 93%;
-    margin-left: 19px;
+    width: 92%;
+    margin-left: 20px;
   }
 
   .collapse-description {

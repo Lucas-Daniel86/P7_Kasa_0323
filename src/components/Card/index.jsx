@@ -6,13 +6,11 @@ export default function Card({ data }) {
   const { id, title, cover } = data
   return (
     <article>
-      {/* <div className="card"> */}
-      <Link to={`/apartment/${id}`} className="link-card-apart">
+      <Link to={`/apartment/${id}`} className="card">
         <img src={cover} alt={title} className="card-img" />
         <div className="card-div"></div>
         <h2>{title}</h2>
       </Link>
-      {/* </div> */}
     </article>
   )
 }

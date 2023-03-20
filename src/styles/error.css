@@ -21,5 +21,12 @@
   color: #ff6060;
   font-size: 18px;
   margin-top: 100px;
+  margin-bottom: 258px;
   text-decoration: none;
+}
+
+@media screen (max-width: 767px) {
+  .error-return {
+    margin-bottom: 120px;
+  }
 }

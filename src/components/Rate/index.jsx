@@ -13,14 +13,14 @@ export default function Rate({ rating }) {
             key={stars.toString()}
             className="full-star"
             src={fullStar}
-            alt=""
+            alt="étoile remplie"
           />
         ) : (
           <img
             key={stars.toString()}
             className="empty-star"
             src={emptyStar}
-            alt=""
+            alt="étoile vide"
           />
         )
       )}

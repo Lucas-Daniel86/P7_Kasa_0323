@@ -12,3 +12,9 @@
 .empty-star {
   max-width: 24px;
 }
+
+@media screen and (max-width: 767px) {
+  .rate {
+    margin-left: 20px;
+  }
+}
