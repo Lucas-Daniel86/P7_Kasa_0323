@@ -2,7 +2,6 @@ import Banner from '../../components/Banner'
 import banner from '../../assets/images/banner-home.png'
 import Gallery from '../../components/Gallery'
 import accomodations from '../../data.json'
-// import '../../styles/card.css'
 
 export default function Home() {
   return (

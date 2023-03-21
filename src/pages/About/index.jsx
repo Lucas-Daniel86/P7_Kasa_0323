@@ -1,8 +1,7 @@
-import React from 'react'
-import banner from '../../assets/images/banner-about.png'
 import Banner from '../../components/Banner'
-import aboutData from '../../aboutData.json'
 import Collapse from '../../components/Collapse'
+import banner from '../../assets/images/banner-about.png'
+import aboutData from '../../aboutData.json'
 
 export default function About() {
   return (

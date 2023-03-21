@@ -1,13 +1,12 @@
 import { useParams } from 'react-router-dom'
+import accomodations from '../../data.json'
+import Error from '../../pages/Error'
 import Carousel from '../../components/Carousel'
 import Title from '../../components/Title'
 import Host from '../../components/Host'
 import Rate from '../../components/Rate'
 import Collapse from '../../components/Collapse'
-import Error from '../../pages/Error'
-import accomodations from '../../data.json'
 import '../../styles/apartment.css'
-import '../../styles/tag.css'
 
 export default function Apartment() {
   const { id } = useParams()
@@ -26,11 +25,8 @@ export default function Apartment() {
         <div className="apart-title-tag">
           <Title title={getApartment.title} location={getApartment.location} />
           <div className="tags">
-            {getApartment.tags.map((tag) => (
-              <div
-                className="tagTxt"
-                key={`${getApartment.tags}-${Math.random()}`}
-              >
+            {getApartment.tags?.map((tag, index) => (
+              <div className="tag-text" key={index}>
                 {tag}
               </div>
             ))}
@@ -52,8 +48,8 @@ export default function Apartment() {
           <li>
             <Collapse
               title="Équipements"
-              description={getApartment.equipments?.map((item) => (
-                <div key={Math.random()}>{item}</div>
+              description={getApartment.equipments?.map((item, index) => (
+                <div key={index}>{item}</div>
               ))}
             />
           </li>

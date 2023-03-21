@@ -20,7 +20,7 @@ export default function Carousel({ pictures }) {
         <img
           className="vector-left vector"
           src={vectorLeft}
-          alt="gauche"
+          alt="Gauche"
           onClick={previousSlide}
         />
       )}
@@ -30,7 +30,7 @@ export default function Carousel({ pictures }) {
             key={index}
             className={index === slide ? 'carousel-img actif' : 'carousel-img'}
             src={picture}
-            alt="appartement à louer"
+            alt="Appartement à louer"
           />
         )
       })}
@@ -41,7 +41,7 @@ export default function Carousel({ pictures }) {
         <img
           className="vector-right vector"
           src={vectorRight}
-          alt="droite"
+          alt="Droite"
           onClick={nextSlide}
         />
       )}

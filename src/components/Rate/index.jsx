@@ -1,4 +1,3 @@
-import React from 'react'
 import emptyStar from '../../assets/images/empty-star.svg'
 import fullStar from '../../assets/images/star-rate.svg'
 import '../../styles/rate.css'
@@ -13,14 +12,14 @@ export default function Rate({ rating }) {
             key={stars.toString()}
             className="full-star"
             src={fullStar}
-            alt="étoile remplie"
+            alt="Étoile remplie"
           />
         ) : (
           <img
             key={stars.toString()}
             className="empty-star"
             src={emptyStar}
-            alt="étoile vide"
+            alt="Étoile vide"
           />
         )
       )}

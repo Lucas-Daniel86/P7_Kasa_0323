@@ -21,9 +21,7 @@
 }
 
 .apart-collapse {
-  margin-top: -20px;
   margin-left: -90px;
-  margin-right: 20px;
   margin-bottom: 70px;
 }
 
@@ -33,6 +31,20 @@
 
 .apart-collapse li {
   width: 50%;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-text {
+  background: #ff6060;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -47,16 +59,19 @@
   }
   .apart-collapse {
     margin-top: -40px;
-    margin-right: 5px;
     margin-left: -40px;
   }
   .apart-collapse ul {
     flex-direction: column;
   }
   .apart-collapse li {
-    width: 100%;
+    width: 97%;
   }
   .apart-title-tag {
     margin-left: 20px;
+  }
+
+  .tag-text {
+    padding: 5px 10px;
   }
 }
