@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import '../../styles/header.css'
 import logo from '../../assets/images/logo.svg'
@@ -12,6 +11,7 @@ export default function Header() {
       <nav>
         <NavLink
           to="/"
+          /*Une ternaire qui ajoute une class, nan-active ou nav-inactive, selon son état*/
           className={(nav) => (nav.isActive ? 'nav-active' : 'nav-inactive')}
         >
           Accueil

@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner'
 import banner from '../../assets/images/banner-home.png'
-import Card from '../../components/Card'
+import Gallery from '../../components/Gallery'
 import accomodations from '../../data.json'
 // import '../../styles/card.css'
 
@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Banner image={banner} title="Chez vous, partout et ailleurs" />
-      <section className="card-container">
+      <section className="gallery-container">
         {accomodations.map((apart) => (
-          <Card key={apart.id} data={apart} />
+          <Gallery key={apart.id} data={apart} />
         ))}
       </section>
     </>
