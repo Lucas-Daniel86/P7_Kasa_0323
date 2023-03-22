@@ -34,9 +34,7 @@ export default function Carousel({ pictures }) {
           />
         )
       })}
-      <span className="carousel-count">
-        {slide + 1} / {pictures.length}
-      </span>
+
       {pictures?.length > 1 && (
         <img
           className="vector-right vector"
@@ -44,6 +42,11 @@ export default function Carousel({ pictures }) {
           alt="Droite"
           onClick={nextSlide}
         />
+      )}
+      {pictures?.length > 1 && (
+        <span className="carousel-count">
+          {slide + 1} / {pictures.length}
+        </span>
       )}
     </div>
   )
