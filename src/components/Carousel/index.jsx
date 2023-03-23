@@ -30,7 +30,7 @@ export default function Carousel({ pictures }) {
             key={index}
             className={index === slide ? 'carousel-img actif' : 'carousel-img'}
             src={picture}
-            alt="Appartement à louer"
+            alt="Propriété"
           />
         )
       })}
